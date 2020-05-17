@@ -3,8 +3,8 @@ from .turn import *
 dunkin = Character(
 	'Dunkin',
 	4,
-	Abilities(strgth = 17, intel = 8, wis = 12, dex = 15, const = 17, cha = 9),
-	('Chaotic', 'Good'),
+	Abilities(strgth = 18, intel = 7, wis = 6, dex = 11, const = 15, cha = 8),
+	('Neutral', 'Neutral'),
 	'Dwarf',
 	Barbarian()
 )
@@ -14,10 +14,46 @@ iorveth = Character(
 	5,
 	Abilities(strgth = 15, intel = 14, wis = 14, dex = 11, const = 14, cha = 7),
 	('Lawful', 'Good'),
-	'Elf',
+	'Half-Elf',
 	Ranger()
 )
 
-party = [iorveth, dunkin]
+griffin = Character(
+	'Griffin',
+	5,
+	Abilities(strgth = 18, intel = 9, wis = 13, dex = 13, const = 11, cha = 17),
+	('Lawful', 'Good'),
+	'Human',
+	Paladin()
+)
 
-r = Room(*(party + [NPC('Orc ' + str(i)) for i in range(3)]))
+redfox = Character(
+	'RedFox',
+	5,
+	Abilities(strgth = 12, intel = 14, wis = 6, dex = 17, const = 8, cha = 10),
+	('Lawful', 'Evil'),
+	'Human',
+	Assassin()
+)
+
+momoa = Character(
+	'Momoa',
+	6,
+	Abilities(strgth = 9, intel = 13, wis = 18, dex = 11, const = 11, cha = 15),
+	('Neutral', 'Neutral'),
+	'Human',
+	Druid()
+)
+
+irina = Character(
+	'Irina',
+	5,
+	Abilities(strgth = 11, intel = 11, wis = 11, dex = 11, const = 11, cha = 11),
+	('Lawful', 'Good'),
+	'Human',
+	Fighter()
+)
+
+party = [iorveth, dunkin, redfox, momoa, griffin, irina]
+
+# r = Room(*(party + [NPC('Orc ' + str(i)) for i in range(3)]))

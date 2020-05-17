@@ -43,8 +43,8 @@ class Character(object):
 		# First list the "to-hit" mods
 		hit_mods = []
 		strgth = self.abilities.get_str()
-		if (strgth > 15):
-			hit_mods.append('To-hit Mods: +' + str(strgth - 15))
+		if (strgth > 16):
+			hit_mods.append('To-hit Mods: +' + str(strgth - 16))
 		hit_string = '  '.join(hit_mods)
 		# Second, list the damage mods
 		dmg_mods = []
