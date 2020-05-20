@@ -56,6 +56,11 @@ class Character(object):
 	def get_name(self):
 		return self.name
 
+	def take_turn(self):
+		title = self.name + "'s turn:\n"
+		table = self.pretty_print(self.hit_reqs())
+		return title + table
+
 class Abilities(object):
 	# This is just a list of the ability values.
 	# Most of them won't even be used for the basic version

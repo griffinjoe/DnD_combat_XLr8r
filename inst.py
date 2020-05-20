@@ -55,5 +55,3 @@ irina = Character(
 )
 
 party = [iorveth, dunkin, redfox, momoa, griffin, irina]
-
-# r = Room(*(party + [NPC('Orc ' + str(i)) for i in range(3)]))
