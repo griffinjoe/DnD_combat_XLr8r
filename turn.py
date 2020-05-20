@@ -24,8 +24,6 @@ class Room(object):
 				for actor in inits[init]:
 					name = actor.get_name() + "'s turn:"
 					col_string = actor.pretty_print(actor.hit_reqs())
-					mod_strings = actor.mod_strings()
-					all = (name, mod_strings[0], col_string, mod_strings[1])
-					print('\n'.join([l for l in all if len(l) > 0]))
+					print(name + '\n' + col_string)
 					# Wait until the operator hits enter to continue
 					input('')
