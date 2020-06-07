@@ -18,3 +18,6 @@ class NPC(object):
 
 	def get_name(self):
 		return self.name
+
+	def take_turn(self):
+		return self.name + "'s turn!\n"

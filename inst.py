@@ -36,22 +36,13 @@ redfox = Character(
 	Assassin()
 )
 
-momoa = Character(
-	'Momoa',
-	6,
-	Abilities(strgth = 9, intel = 13, wis = 18, dex = 11, const = 11, cha = 15),
-	('Neutral', 'Neutral'),
-	'Human',
-	Druid()
-)
+#momoa = Character(
+#	'Momoa',
+#	6,
+#	Abilities(strgth = 9, intel = 13, wis = 18, dex = 11, const = 11, cha = 15),
+#	('Neutral', 'Neutral'),
+#	'Human',
+#	Druid()
+#)
 
-irina = Character(
-	'Irina',
-	5,
-	Abilities(strgth = 11, intel = 11, wis = 11, dex = 11, const = 11, cha = 11),
-	('Lawful', 'Good'),
-	'Human',
-	Fighter()
-)
-
-party = [iorveth, dunkin, redfox, momoa, griffin, irina]
+party = [iorveth, dunkin, redfox, griffin]
